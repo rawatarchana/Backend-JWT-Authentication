@@ -1,4 +1,4 @@
-# Project Name
+# Backend-JWT-Authentication-Basic
 
 Create a user with using NodeJS with JWT Authentication( where create a token and verify person with the access token) , perform all CURD operations.
 
