@@ -7,8 +7,8 @@ const userAuthenticateToken = require('../middleware/userAuthenticateToken');
 const router = express.Router();
 
 router.post('/user/create' ,userController.createUser);
-router.get('/user/get/admin' ,userAuthenticateToken, userController.getAdminUsers);
-router.get('/user/get/basic' , userAuthenticateToken,userController.getBasicUsers);
+router.get('/user/get/admin' , userController.getAdminUsers);
+router.get('/user/get/basic' , userController.getBasicUsers);
 router.get('/user/get' ,userAuthenticateToken, userController.getUsersByEmailId);
 router.post('/user/update/phoneNumber',userAuthenticateToken, userController.updateAdminUsersPhoneNumber);
 router.post('/user/update/education' , userAuthenticateToken,userController.updateAdminUsersEducation);
